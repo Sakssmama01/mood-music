@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Music Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎧 Mood Music Recommender</h1>
+    <p>Select your mood:</p>
+    
+    <!-- Dark Mode Button -->
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌗 Toggle Dark Mode</button>
+
+    <div class="buttons">
+      <button onclick="showPlaylist('happy')">😊 Happy</button>
+      <button onclick="showPlaylist('sad')">😢 Sad</button>
+      <button onclick="showPlaylist('chill')">😌 Chill</button>
+      <button onclick="showPlaylist('energetic')">⚡ Energetic</button>
+    </div>
+
+    <div id="playlist" class="playlist"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
